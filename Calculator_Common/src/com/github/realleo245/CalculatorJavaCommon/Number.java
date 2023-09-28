@@ -42,4 +42,17 @@ public interface Number extends Comparable<Number> {
      * @return The cube root of the {@link Number}
      */
     public Number cbrt();
+    /**
+     * @return The absolute value of the {@link Number}
+     */
+    public Number abs();
+    /**
+     * @return The negation of the current {@link Number}
+     */
+    public Number negate();
+    /**
+     * @return -1 if negative, 0 if 0, 1 if positive 
+     */
+    public int signum();
+    public int compareTo(Number anotherNumber);
 }
